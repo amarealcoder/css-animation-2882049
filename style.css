@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap");
+
+@keyframes type{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 9em
+  }
+}
+@keyframes blinkingCursor{
+  from{
+    border-right-color: red ;
+  }
+  to{
+    border-right-color: transparent;
+  }
+}
+body{
+  
+  height: 100vh;
+  padding: 4em;
+  background-color: blanchedalmond;
+}
+
+h2{
+  position: relative;
+  top: 50%;
+  width: 9em;
+  margin: 0 auto;
+  border-right: 2px solid red;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 3s steps(21) 2s backwards,
+              blinkingCursor .5s infinite
+ 
+
+}
